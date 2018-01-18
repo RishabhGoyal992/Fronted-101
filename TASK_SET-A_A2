@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	 body{
+			background: rgb(234, 16, 75);
+		}
+		.row{
+		    display: flex;
+	    	background:rgb(234, 16, 75);
+		    flex-wrap: wrap;
+			justify-content: space-around;
+			align-cols: center;
+			height: 100vh;
+			width: 100vw;
+			
+		}
+		.col{
+			background: rgb(256,256,256);
+			height: 180px;
+			margin: 2.5vw;
+			
+	
+		}
+		@media all and (min-width:940px){
+			.col{
+				width: 20vw;
+			}
+			.col:nth-child(8n-4) {
+				opacity: 0;
+			}
+			.col:nth-child(5){
+				opacity: 0;
+			}
+		}
+		@media all and (max-width: 940px) and (min-width: 640px)
+		{
+			.col{
+				width: 28vw;
+			}
+			.col:nth-child(6n-3){
+				opacity: 0;
+			}
+			.col:nth-child(6n-2){
+				opacity: 0;
+			}
+		}
+		@media all and (max-width: 640px) and (min-width: 340px)
+		{
+			.col{
+				width: 45vw;
+			}
+			.col:nth-child(4n-2){
+				opacity: 0;
+			}
+			.col:nth-child(4n-1){
+				opacity: 0;
+			}			
+		}
+		@media all and (max-width: 340px)
+		{
+			.col{
+				width: 95vw;
+			}	
+		}
+		</style>
+	<title>TASK_A2</title>
+</head>
+<body>
+	 <div class="row"> 	  
+           <div class="col"></div> 	  
+           <div class="col"></div> 	  
+           <div class="col"></div> 	  
+           <div class="col"></div> 	  
+           <div class="col"></div> 	  
+           <div class="col"></div> 	  
+           <div class="col"></div> 	  
+           <div class="col"></div> 	  
+           <div class="col"></div> 	  
+           <div class="col"></div> 	  
+           <div class="col"></div> 	  
+           <div class="col"></div> 	  
+		   </div>
+
+</body>
+</html>
